@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'beautiful_slovenia.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
-        'NAME': os.environ.get("SQL_DATABASE", "sqlite3"),
+        'NAME': os.environ.get("SQL_DATABASE", "db.sqlite3"),
         'USER': os.environ.get("SQL_USER", "debt_user"),
         'PASSWORD': os.environ.get("SQL_PASSWORD", "123456"),
         'HOST': os.environ.get("SQL_HOST", "localhost"),
